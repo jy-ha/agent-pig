@@ -23,3 +23,4 @@ Demo : https://blonix.dev/agentpig
 2. matrix를 파일로 저장하지만, service 실행중에는 상시 memory load 되어 있으므로,
 웹엔진에서 멀티 프로세스 기능을 활용하거나 load-balancer 등으로 다수의 인스턴스가 실행될 시 정상작동 하지 않습니다.
 이를 해결하기 위해 모든 요청마다 matrix 파일을 읽고쓰는 방법으로 해결할 수 있습니다.
+3. Naive bayesian은 각 사건이 독립사건이라 전제하지만, 해당 문제에서는 적절하지 못한 가정일 수 있습니다. 개선을 위해 Recommandation Algorism의 적용을 고려해볼 수 있습니다.
